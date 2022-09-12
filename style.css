@@ -1,0 +1,143 @@
+* {
+    font-family: Courier New;
+    box-sizing: border-box;
+    }
+body {
+    background-color: #ECECEC;
+  } 
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: auto;
+    max-width: 800px;
+  }
+
+ h1, h2, h3, h4, p, li {
+    color: #151515;
+    padding: 0rem;
+  }
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+h2 {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+h2#reverse {
+    font-size: 1rem;
+    text-align: right;
+  }
+
+h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+h4 {
+    font-size: .8rem;
+    text-align: center;
+  }
+h5 {
+    font-size: .8rem;
+    margin: 1rem;
+}
+p {
+    color: #151515;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+p#reverse {
+    text-align: right;
+}
+
+ol {
+    display: flex;
+    flex-wrap: nowrap; 
+    padding: 0rem;    
+    height: 230px;
+  }
+
+li {
+    margin-bottom: 1rem;
+  }
+
+menu {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    padding: 0rem; 
+    height: 230px;
+  }
+
+div#header {
+     display: flex;
+     flex-wrap: nowrap;
+     margin: auto;
+     max-width: 800px;
+     height: fit-content;
+  }
+
+section {
+     display: flex;
+     flex-wrap: nowrap;
+     margin: auto;
+     margin-top: 1rem;
+     border: 1px solid #151515;
+     border-radius: 1rem;
+     max-width: 800px;
+     background-color: white;
+     padding: 1rem;
+  }
+
+section#research {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+section#timeline {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+img {
+    border-radius: 1rem;
+    border: 1px solid #151515;
+  }
+
+img#header {
+    max-width: 100%;
+    max-height: 500px;
+  }
+
+img#research {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+@media (max-width: 730px){
+    *{
+        flex-wrap: wrap !important;
+        align-content: center !important;
+    }
+    body {
+      margin-left: .5rem !important;
+      margin-right: .5rem !important;
+    }
+    ol { 
+      padding: 0rem;    
+      height: 100%;
+      margin-bottom: 1rem;
+    }
+    menu { 
+      padding: 0rem;    
+      height: 100%;
+      margin-bottom: 1rem;
+    }
+}
